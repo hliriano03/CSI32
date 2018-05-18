@@ -1,0 +1,28 @@
+def F(y,L,x):
+	L[0] = L[-1]
+	x = x + 1
+	y = 2 + x
+	L[3] = L[2]
+	
+	return x + y
+
+x, z = 1, 2
+myList = [’one’, 4, ’two’, 10]
+
+z = F(z, myList, x)
+
+print("x:",x)
+print("z:",z)
+print("myList:", myList)
+
+
+Will Print:
+
+x: 1
+z: 6
+myList: ’one’, 4, ’two’, 10
+
+COMMENT: myList is changed, since changes to the internal data are seen outside the function.
+
+Because x, is initially established, z equals the return of the x value changed to 2 and y value changed to 4 which added equals 6, and myList
+is already established outside the function. 

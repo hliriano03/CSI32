@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>20</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1240</x>
+      <y>20</y>
+      <w>400</w>
+      <h>440</h>
+    </coordinates>
+    <panel_attributes>SwitchOrStay
+-
+UI:function
+Cards:function
+Statistics:function
+isGameContinue:boolian
+winsbyswitch:int
+losesbyswitch:int
+winsbystay:int
+losesbystay:int
+-
+run()
+PlayRound()
+isGameOver()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>800</y>
+      <w>360</w>
+      <h>620</h>
+    </coordinates>
+    <panel_attributes>UserInterface
+
+-
+Intro()
+getChooseCard()
+getSwitchOrStay()
+getRoundResult()
+getGameResult(result)
+getGameContinue()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2040</x>
+      <y>800</y>
+      <w>280</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>SetOfCards
+-
+cards:list
+Chosencard:int
+-
+_setCards()
+RemoveCard()
+setChosenCard()
+getChosenCard()
+getCards()
+SwitchOrStay()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>740</x>
+      <y>440</y>
+      <w>740</w>
+      <h>400</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;180.0;350.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1420</x>
+      <y>440</y>
+      <w>800</w>
+      <h>400</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>380.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1240</x>
+      <y>1240</y>
+      <w>400</w>
+      <h>400</h>
+    </coordinates>
+    <panel_attributes>Statistics
+-
+winsbyswitch:int
+losesbyswitch:int
+winsbystay:int
+losesbystay:int
+-
+Update(ans, ChosenCard):
+__str__()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1420</x>
+      <y>440</y>
+      <w>60</w>
+      <h>840</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;400.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

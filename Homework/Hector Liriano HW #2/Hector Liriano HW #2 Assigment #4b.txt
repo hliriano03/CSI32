@@ -1,0 +1,24 @@
+1. Game Intro
+
+2. Game Start Round
+	a. Game set of 3 cards, one winning card and two losing cards
+	b. Game ask player to pick a card
+	c. Game removes one losing card
+	d. Game ask if player would like to switch or stay with the card picked
+		i. if player have winning card and player switches then player
+		   looses, else if player have loosing card and switches then
+		   player wins.
+		ii. if player have winning card and stays then player wins else
+		    if player have loosing card and stays then player looses.
+	e. Round ends and gives round results and tells player whether
+	   they won or lost.
+	
+3. Game checks if player wants to play again
+	a. Game ask if player wants to play another round
+	b. if player chooses not to play, then game outputs how many
+		   wins and loses the player had, and also how many times
+		   the player switched or stayed.
+	COMMENT: I would just like to add one thing- basically link the win/lose data
+                 to the switch/stay data.  By that I mean output number of wins
+                 when the player switched, number of wins when they stay, number of
+                 loses when they switch, number of loses when they stay.
